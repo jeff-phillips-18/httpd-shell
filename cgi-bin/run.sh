@@ -6,7 +6,7 @@ echo "<head>"
 echo "<title>CGI Test</title>"
 echo "</head>"
 echo "<body>"
-echo "<a href="index.html">Click Here</a>"
+echo "<a href="/index.html">Click Here To Return Home</a>"
 echo "</body>"
 echo "</html>"
 ##
