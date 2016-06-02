@@ -7,9 +7,9 @@ First, fork this repository
 You'll have a repo called something like `https://github.com/<username>/httpd-shell` Clone that and clean it up
 
 ```
-user@host$  cd /usr/local/src/
-user@host$  git clone https://github.com/<username>/httpd-shell
-user@host$  cd httpd-shell/
+user@host$ cd /usr/local/src/
+user@host$ git clone https://github.com/<username>/httpd-shell
+user@host$ cd httpd-shell/
 user@host$ rm -rf html/*
 user@host$ rm -rf cig-bin/*
 ```
