@@ -2,7 +2,7 @@
 
 
 First, fork this repository
-![ldapfork](images/ldap-fork.jpg)
+![fork](images/fork.jpg)
 
 You'll have a repo called something like `https://github.com/<username>/httpd-shell` Clone that and clean it up
 
