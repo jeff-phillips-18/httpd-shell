@@ -16,8 +16,8 @@ user@host$ rm -rf cig-bin/*
 
 Copy your code/files/artifacts into the repo
 ```
-user@host$ cp /path/to/html/*.html html/
-user@host$ cp /path/to/cig-bin/* cgi-bin/
+user@host$ cp -a /path/to/html/* html/
+user@host$ cp -a /path/to/cig-bin/* cgi-bin/
 ```
 
 Once you added your stuff; add it to your forked repo 
