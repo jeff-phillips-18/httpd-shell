@@ -2,7 +2,7 @@
 
 
 First, fork this repository
-![fork](images/fork.jpg)
+![fork](fork.jpg)
 
 You'll have a repo called something like `https://github.com/<username>/httpd-shell` Clone that and clean it up
 
