@@ -1,15 +1,19 @@
-#
-#
-FROM registry.access.redhat.com/rhel7
+FROM registry.access.redhat.com/ubi8/ubi:latest
 
-RUN yum -y install tar httpd mod_ssl ksh && yum -y clean all
+USER root
 
-COPY html /var/www/html
-COPY cgi-bin /var/www/cgi-bin
+WORKDIR /srv
 
-EXPOSE 80
+RUN dnf -y install python39 && dnf -y clean all
 
-ENTRYPOINT ["/usr/sbin/httpd"]
-CMD ["-D", "FOREGROUND"]
+COPY html /srv
+
+RUN chown -R 1001:0 /srv && chmod -R ug+rwx /srv
+USER 1001
+
+EXPOSE 8080
+
+ENTRYPOINT ["python3"]
+CMD ["-m", "http.server", "-d", "/srv/", "8080"]
 ##
 ##
