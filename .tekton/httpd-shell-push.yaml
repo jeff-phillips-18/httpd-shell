@@ -10,7 +10,7 @@ metadata:
     pipelinesascode.tekton.dev/on-target-branch: '[master]'
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: test-app-1
+    appstudio.openshift.io/application: pacman
     appstudio.openshift.io/component: httpd-shell
     pipelines.appstudio.openshift.io/type: build
   name: httpd-shell-on-push
@@ -22,7 +22,7 @@ spec:
   - name: git-url
     value: '{{repo_url}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads-stage/jephilli-tenant/test-app-1/httpd-shell:{{revision}}
+    value: quay.io/redhat-user-workloads-stage/jephilli-tenant/pacman/httpd-shell:{{revision}}
   - name: path-context
     value: .
   - name: revision
